@@ -36,7 +36,7 @@
 
 .btn {
     display: inline-block;
-    padding: 12px 13px;
+    padding: 12px 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 9px;
@@ -47,6 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 10px;
     }
     &__primary {
         background: black;

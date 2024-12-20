@@ -5,6 +5,7 @@ import ProfilIcon from "../../../public/user.svg";
 import LogoutIcon from "../../../public/logout.svg";
 import MenuItem from "@/components/MenuItem";
 import Button from "@/components/Button";
+import style from "./index.module.scss";
 
 const Index = () => {
 
@@ -27,7 +28,7 @@ const Index = () => {
     ]
 
     return (
-        <aside>
+        <aside className={style.sidebar}>
             <nav>
                 <ul>
                     {
@@ -37,7 +38,7 @@ const Index = () => {
                     }
                 </ul>
             </nav>
-            <div>
+            <div className={style.sidebar__bottom}>
                 <Button
                     label="log out"
                     type="button"

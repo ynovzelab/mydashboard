@@ -5,9 +5,10 @@ const Index = ({
     handleClick,
     classes,
     icon,
-    iconPosition, // left or right
+    iconPosition,
     type,
     disabled }) => {
+    
     return (
         <button
             onClick={handleClick}
@@ -15,7 +16,7 @@ const Index = ({
             disabled={disabled}
             className={`
             ${styles.btn} 
-            ${iconPosition && styles[`with__icon`]}
+            ${iconPosition && styles.with__icon}
             ${styles.btn__primary}
             // ${styles[classes]}`}
         >
